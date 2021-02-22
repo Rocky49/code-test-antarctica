@@ -8,6 +8,8 @@ Although I am going to try to deploy it on heroku first, just in case I didn't s
 4.	Framework used: Express
 5.  Database: MS SQL Server 2019 ( I've used mssql npm package instead of sequelize, **reason**: I love db drivers that gives the flexibilty to create custom query, I know ORM is the standard but I think this gives use more control on our data and also we can refactor it to make it part of the external layer that follows Onion Architecture *https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html* ).
 
+**Note**: If you face issue while *npm i* with bcrypt do this *npm install --save bcryptjs && npm uninstall --save bcrypt*
+
 # sortBy and sortType
 sortType: [1, 0] , sortBy: [fname, lname, orgName, empId, emailId]
 
