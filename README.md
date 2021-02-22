@@ -17,9 +17,9 @@ sortType: [1, 0] , sortBy: [fname, lname, orgName, empId, emailId]
 
 # folder structure
 
-1. config<br/>
+config<br/>
      |-config-dev.js<br/>
-1. helper<br/>
+helper<br/>
      |-auth.js<br/>
      |-logger.js<br/>
      |-register.js<br/>
