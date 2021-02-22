@@ -1,0 +1,18 @@
+# Introduction 
+This is my code test project for Antarctica.
+
+# Getting Started
+Although I am going to try to deploy it on heroku first, just in case I didn't succeed.
+1. download this project and do an *npm i && node index.js* or nodemon if you have it installed globally.
+2.	Node version: 12.18.* (it is packed with npm)
+4.	Framework used: Express
+5.  Database: MS SQL Server 2019 ( I've used mssql npm package instead of sequelize, **reason**: I love db drivers that gives the flexibilty to create custom query, I know ORM is the standard but I think this gives use more control on our data and also we can refactor it to make it part of the external layer that follows Onion Architecture *https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html* ).
+
+#folder structure
+config
+     |
+index.js
+startup
+      |-routes.js
+      |-logging.js
+      |-config.js
