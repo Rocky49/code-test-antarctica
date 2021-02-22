@@ -16,7 +16,8 @@ import aws_code_test.postman_collection.json in **Postman** to test the endpoint
 sortType: [1, 0] , sortBy: [fname, lname, orgName, empId, emailId]
 
 # folder structure
-
+dbscripts<br/>
+     -create.sql<br/>
 config<br/>
      -config-dev.js<br/>
 helper<br/>
