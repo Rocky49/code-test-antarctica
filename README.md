@@ -17,26 +17,26 @@ sortType: [1, 0] , sortBy: [fname, lname, orgName, empId, emailId]
 
 # folder structure
 
-config
-     |-config-dev.js
-helper
-     |-auth.js
-     |-logger.js
-     |-register.js
-middleware
-     |-auth.js
-     |-error.js(works when try catch is not defined)
-     |-logger.js(logs route on dev and add other default headers)
-routes
-     |-auth.js (login)
-     |-employee.js (user list)
-     |-register.js
-service
-     |-employee.js
-startup
-     |-routes.js
-     |-logging.js
-     |-config.js
-.env (all const value like port, JWT_secret)
-.gitignore
-index.js(entry point)
+1. config<br/>
+     |-config-dev.js<br/>
+1. helper<br/>
+     |-auth.js<br/>
+     |-logger.js<br/>
+     |-register.js<br/>
+middleware<br/>
+     |-auth.js<br/>
+     |-error.js(works when try catch is not defined)<br/>
+     |-logger.js(logs route on dev and add other default headers)<br/>
+routes<br/>
+     |-auth.js (login)<br/>
+     |-employee.js (user list)<br/>
+     |-register.js<br/>
+service<br/>
+     |-employee.js<br/>
+startup<br/>
+     |-routes.js<br/>
+     |-logging.js<br/>
+     |-config.js<br/>
+.env (all const value like port, JWT_secret)<br/>
+.gitignore<br/>
+index.js(entry point)<br/>
