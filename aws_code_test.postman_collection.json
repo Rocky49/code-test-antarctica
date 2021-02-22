@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "2b1490bf-277b-4d61-ac82-936462c2b318",
+		"name": "aws_code_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "employee-api",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.cm9ja3lzaGluZGU5MUBnbWFpbC5jb20.6m6YzqQ-E_0Pkcl1WUGSw_Rx9kjt2Xz-V0lvHxrP3Uc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pageNum\": 1,\r\n    \"rowSize\": 5,\r\n    \"sortBy\": \"fname\",\r\n    \"sortType\": 1,\r\n    \"search\": \"Rocky\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://13.233.137.219:5000/api/employee",
+					"protocol": "http",
+					"host": [
+						"13",
+						"233",
+						"137",
+						"219"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fname\": \"Rocky\",\r\n    \"lname\": \"Shinde\",\r\n    \"emailId\": \"rockyshinde91@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"orgName\": \"Student\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://13.233.137.219:5000/api/register",
+					"protocol": "http",
+					"host": [
+						"13",
+						"233",
+						"137",
+						"219"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\":\"rockyshinde91@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://13.233.137.219:5000/api/auth",
+					"protocol": "http",
+					"host": [
+						"13",
+						"233",
+						"137",
+						"219"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
