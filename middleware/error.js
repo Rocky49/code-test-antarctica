@@ -13,5 +13,5 @@ module.exports = function (err, req, res, next) {
     //debug
     //silly
     // log the exception
-    res.status(500).send({msg: 'something went wrong'});
+    return res.status(500).send({msg: 'something went wrong'});
 }

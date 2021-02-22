@@ -14,9 +14,14 @@ router.post("/", auth, async (req, res) => {
   try {
     let list;
     list = await searchAndSort(req.body);
-    res.send(list);
+    if(list.recordset.length > 0) {
+        return res.send(list);
+    } else {
+        return res.status(404).send({ message: 'No records found'});
+    }
   } catch (ex) {
-    res.status(500).send(ex);
+      console.log('inside catch', ex);
+    res.status(500).send({ error: 'something went wrong'});
   }
 });
 

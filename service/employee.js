@@ -77,8 +77,8 @@ async function searchAndSort(obj) {
       }
     }
     catch(ex) {
-        console.log('err', ex);
-        return ex;
+        // console.log('err', ex);
+        throw new Error(ex);
     }
 }
 
