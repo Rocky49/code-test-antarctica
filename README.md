@@ -2,7 +2,7 @@
 This is my code test project for Antarctica.
 
 # Getting Started
-Although I am going to try to deploy it on heroku first, just in case I didn't succeed.
+deployed on aws instance
 1. download this project and do an *npm i && node index.js* or nodemon if you have it installed globally.
 2.	Node version: 12.18.* (it is packed with npm)
 4.	Framework used: Express
